@@ -44,7 +44,7 @@ const News = (props) => {
   const fetchMoreData = async () => {
     setLoading(true);
     let data = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=in&category=${
+      `http://newsapi.org/v2/top-headlines?country=in&category=${
         props.category
       }&apiKey=2603d6061e1043099abf75984bb78f6c&page=${page + 1}&pageSize=5`
     );
